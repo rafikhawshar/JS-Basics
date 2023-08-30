@@ -9,5 +9,7 @@ for (let img = 0; img < imgs.length; img++) {
   });
 
  
-
+  imgs[img].addEventListener("mouseout", () => {
+    imgs[img].setAttribute("src", originalSrc);
+  });
 }
